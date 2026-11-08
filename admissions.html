@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions & Fees | St. Benedict Junior secondary school</title>
+  <meta name="description" content="Admissions open for 2026 at st benedict junior secondary school. Apply online, view fees, payment methods, and requirements." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-inner-page" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-badge"><img src="images/school logo.png" alt="St. Benedict junior secondary school Logo" /></div>
+        <div class="logo-text">
+          <span class="name">St. Benedict Junior secondary school </span>
+          <span class="sub">Matuu</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="teachers.html">Teachers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a href="admissions.html" class="btn btn-primary">Apply Now</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Admissions &amp; Fees</h1>
+      <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Admissions</div>
+    </div>
+  </section>
+
+  <!-- ===== ADMISSION STEPS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">How to Join</span>
+        <h2>Admission Process</h2>
+        <p>Three simple steps to enrol your child at St. Benedict Junior secondary school.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-num">1</div>
+          <h4>Fill the Online Form</h4>
+          <p>Complete the application form below with your child's details and your contact information.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">2</div>
+          <h4>Attend Interview</h4>
+          <p>Our team will call you within 24 hours to schedule an interview and assessment for your child.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">3</div>
+          <h4>Pay Admission Fee</h4>
+          <p>Upon successful interview, pay the one-time admission fee of 5,000 KES to secure the place.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ONLINE APPLICATION FORM ===== -->
+  <section class="section bg-light" id="apply">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Online Application</span>
+        <h2>Apply for Admission</h2>
+        <p>Fill in the form below and we will contact you within 24 hours via WhatsApp and phone.</p>
+      </div>
+
+      <!-- Success message -->
+      <div class="form-success" id="form-success">
+        <div class="check-icon">&#10003;</div>
+        <h4>Thank You!</h4>
+        <p>We received your application. We will call you within 24 hours. WhatsApp has also been opened with your details — please send the message to complete your application.</p>
+      </div>
+
+      <form id="admission-form" class="form-wrap reveal" novalidate>
+        <h3>Student Application Form</h3>
+        <p class="form-sub">Fields marked with <span style="color:var(--error)">*</span> are required.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="studentName">Student Full Name <span class="req">*</span></label>
+            <input type="text" id="studentName" name="studentName" class="form-control" placeholder="e.g. Mary Wanjiru Kamau" required />
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth <span class="req">*</span></label>
+            <input type="date" id="dob" name="dob" class="form-control" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="gender">Gender <span class="req">*</span></label>
+            <select id="gender" name="gender" class="form-control" required>
+              <option value="" disabled selected>Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="classApplying">Class Applying For <span class="req">*</span></label>
+            <select id="classApplying" name="classApplying" class="form-control" required>
+              <option value="" disabled selected>Select class</option>
+              <option value="Grade 1">Grade 1</option>
+              <option value="Grade 2">Grade 2</option>
+              <option value="Grade 3">Grade 3</option>
+              <option value="Grade 4">Grade 4</option>
+              <option value="Grade 5">Grade 5</option>
+              <option value="Grade 6">Grade 6</option>
+              <option value="Form 1">Grade 10</option>
+              <option value="Form 2">Grade 8</option>
+              <option value="Form 3">Grade 9</option>
+               </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="prevSchool">Previous School</label>
+          <input type="text" id="prevSchool" name="prevSchool" class="form-control" placeholder="e.g. St james primary school School (if applicable)" />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="parentName">Parent Full Name <span class="req">*</span></label>
+            <input type="text" id="parentName" name="parentName" class="form-control" placeholder="e.g. Mr. David Kamau" required />
+          </div>
+          <div class="form-group">
+            <label for="parentPhone">Parent Phone <span class="req">*</span></label>
+            <input type="tel" id="parentPhone" name="parentPhone" class="form-control" placeholder="e.g. 0712 345 678" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="parentEmail">Parent Email <span class="req">*</span></label>
+          <input type="email" id="parentEmail" name="parentEmail" class="form-control" placeholder="e.g. parent@email.com" required />
+        </div>
+
+        <div style="text-align:center;">
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;max-width:340px;">Submit Application</button>
+        </div>
+        <p style="text-align:center;font-size:0.82rem;color:var(--gray-400);margin-top:16px;">
+          On submit, your details will be sent to our admissions team via WhatsApp.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FEES TABLE ===== -->
+  <section class="section" id="fees">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">School Fees</span>
+        <h2>Tuition Fees per Term</h2>
+        <p>Affordable, quality education for every family. Fees are payable per term.</p>
+      </div>
+      <div class="results-table-wrap reveal">
+        <!-- EDIT: CHANGE FEES HERE -->
+        <table class="results-table fees-table">
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Tuition Fee (per term)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Form 1</td>
+              <td class="amount">KES 15,000</td>
+            </tr>
+            <tr>
+              <td>Form 2</td>
+              <td class="amount">KES 15,000</td>
+            </tr>
+            <tr>
+              <td>Form 3</td>
+              <td class="amount">KES 12,500</td>
+            </tr>
+            <tr>
+              <td>Form 4</td>
+              <td class="amount">KES 15,000</td>
+            </tr>
+            <tr>
+              <td>Grade 1 - 6</td>
+              <td class="amount">KES 18,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Payment info -->
+      <div class="payment-info reveal">
+        <h4>Payment Method — M-Pesa</h4>
+        <!-- EDIT: CHANGE PAYBILL AND ACCOUNT HERE -->
+        <p class="pay-detail">Paybill: <strong>400200</strong></p>
+        <p class="pay-detail">Account: <strong>Student Name</strong></p>
+        <p style="font-size:0.9rem;margin-top:12px;color:rgba(255,255,255,0.7);">
+          Fees are payable at the beginning of each term. A one-time admission fee of KES 5,000 applies to new students.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REQUIREMENTS ===== -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">What to Bring</span>
+        <h2>Admission Requirements</h2>
+        <p>Please prepare the following documents for your child's admission.</p>
+      </div>
+      <div class="requirements-list reveal">
+        <div class="req-item">
+          <span class="check">&#10003;</span>
+          <span>Birth Certificate Copy</span>
+        </div>
+        <div class="req-item">
+          <span class="check">&#10003;</span>
+          <span>2 Passport Photos</span>
+        </div>
+        <div class="req-item">
+          <span class="check">&#10003;</span>
+          <span>Previous Report Card</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container reveal">
+      <h2>Have Questions About Admissions?</h2>
+      <p>Call us at +254 727 323 001 or visit our school office in Ekalakala.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="logo-badge"><img src="images/school logo.png" alt="St. Benedict junior secondary school Logo" /></div>
+            <span class="name">St. Benedict Junior Secondary School</span>
+          </div>
+          <p>A leading primary and secondary school in Ekalakala, Matuu. Providing holistic education grounded in discipline and excellence since 2008.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=100089068956013" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">t</a>
+            <a href="#" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">&rarr; Home</a></li>
+            <li><a href="about.html">&rarr; About Us</a></li>
+            <li><a href="academics.html">&rarr; Academics</a></li>
+            <li><a href="admissions.html">&rarr; Admissions</a></li>
+            <li><a href="teachers.html">&rarr; Teachers</a></li>
+            <li><a href="gallery.html">&rarr; Gallery</a></li>
+            <li><a href="contact.html">&rarr; Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Academics</h4>
+          <ul>
+            <li><a href="academics.html">&rarr; CBC Curriculum</a></li>
+            <li><a href="academics.html">&rarr; KJSEA Results</a></li>
+            <li><a href="academics.html">&rarr; Subjects Offered</a></li>
+            <li><a href="academics.html">&rarr; Facilities</a></li>
+            <li><a href="admissions.html#fees">&rarr; School Fees</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <span class="fc-icon">&#9742;</span>
+            <span>+254 724 742656</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="fc-icon">&#9993;</span>
+            <span>stbenedictsch246@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="fc-icon">&#9873;</span>
+            <span> Ekalakala, Matuu, Kenya</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="fc-icon">&#9200;</span>
+            <span>Mon-Fri: 8AM - 4PM<br>Sat: 9AM - 12PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 St. Benedict Junior Secondary School . All rights reserved. &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/+254 724 742656" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
