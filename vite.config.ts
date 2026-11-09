@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/St_benedict_website/',
+  base: process.env.GITHUB_PAGES ? '/st-benedict-website/' : '/',
   build: {
     rollupOptions: {
       input: {
